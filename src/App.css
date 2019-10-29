@@ -1,22 +1,81 @@
-.App {
-  text-align: center;
+html {
+  background: #0e0d0d;
 }
 
-.App-logo {
-  height: 40vmin;
+svg {
+  width: 400px;
+  fill: rgb(37, 37, 37);
+  stroke: #ff6600;
+  stroke-width: 1;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.marks {
+  transform: translate(20px, 20px);
+  stroke-width: 0.2;
+}
+.marks > line:nth-child(1) {
+  /* There are 12 marks, so we rotate by 30deg (12 * 30 = 360) */
+  transform: rotate(30deg);
+}
+.marks > line:nth-child(2) {
+  transform: rotate(calc(2 * 30deg));
+}
+.marks > line:nth-child(3) {
+  transform: rotate(calc(3 * 30deg));
+  stroke-width: 0.5;
+}
+.marks > line:nth-child(4) {
+  transform: rotate(calc(4 * 30deg));
+}
+.marks > line:nth-child(5) {
+  transform: rotate(calc(5 * 30deg));
+}
+.marks > line:nth-child(6) {
+  transform: rotate(calc(6 * 30deg));
+  stroke-width: 0.5;
+}
+.marks > line:nth-child(7) {
+  transform: rotate(calc(7 * 30deg));
+}
+.marks > line:nth-child(8) {
+  transform: rotate(calc(8 * 30deg));
+}
+.marks > line:nth-child(9) {
+  transform: rotate(calc(9 * 30deg));
+  stroke-width: 0.5;
+}
+.marks > line:nth-child(10) {
+  transform: rotate(calc(10 * 30deg));
+}
+.marks > line:nth-child(11) {
+  transform: rotate(calc(11 * 30deg));
+}
+.marks > line:nth-child(12) {
+  transform: rotate(calc(12 * 30deg));
+  stroke-width: 0.5;
 }
 
-.App-link {
-  color: #09d3ac;
+.clockName {
+  font-size: 1px;
+  font-family: sans-serif;
+  transform: translate(14px, 18px) rotate(90deg);
+  fill: #ff6600;
+  stroke: none;
+}
+
+.seconds {
+  stroke-width: 0.3;
+  stroke: #d00505;
+}
+.minute {
+  stroke-width: 0.6;
+}
+.hour {
+  stroke-width: 1;
+}
+.pin {
+  stroke: #000000;
+  stroke-width: 0.2;
 }
